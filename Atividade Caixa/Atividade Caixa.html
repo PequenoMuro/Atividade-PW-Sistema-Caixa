@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Caixa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: .4s ease-in-out;
+}
+
+.form:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+}
+
+#heading {
+  text-align: center;
+  margin: 2em;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+
+.button2 {
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color: rgb(233, 233, 233);
+}
+
+.button2:hover {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+.button3 {
+  margin-bottom: 3em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color: rgb(255, 255, 255);
+}
+
+.button3:hover {
+  background-color: red;
+  color: rgb(255, 255, 255);
+}
+
+body{
+    background-color: #252525;
+}
+</style>
+<body> 
+    <center>
+    <div class="card" style="width: 30rem; margin-top: 10%;">
+    <form class="form" action="script.php" method="POST">
+        <p id="heading"><b>Sistema de Caixa</b></p>
+        <label style="color:white;margin-right: 74%;font-size: 12px;">Nome do Cliente</label>
+        <div class="field">
+        
+          
+          <input autocomplete="off" placeholder="Insira seu nome aqui" name="nome" id="nome" class="input-field" type="text">
+        </div>
+        <br>
+        <label style="color:white;margin-right: 60%;font-size: 12px;">Nome do Primeiro Produto</label>
+        <div class="field">
+        
+          
+          <input autocomplete="off" placeholder="Insira o nome do produto aqui" name="nmProduto1" id="nmProduto1" class="input-field" type="text">
+        </div>
+        <br>
+        <label style="color:white;margin-right: 63%;font-size: 12px;">Valor do Primeiro Produto</label>
+        <div class="field">
+        
+          
+          <input autocomplete="off" placeholder="Insira o valor do produto aqui" name="vlProduto1" id="vlProduto1" class="input-field" type="text">
+        </div>
+        <br>
+        <label style="color:white;margin-right: 62%;font-size: 11px;">Nome do Segundo Produto</label>
+        <div class="field">
+        
+          
+          <input autocomplete="off" placeholder="Insira o nome do produto aqui" name="nmProduto2" id="nmProduto2" class="input-field" type="text">
+        </div>
+        <br>
+        <label style="color:white;margin-right: 62%;font-size: 12px;">Valor do Segundo Produto</label>
+        <div class="field">
+        
+          
+          <input autocomplete="off" placeholder="Insira o valor do produto aqui" name="vlProduto2" id="vlProduto2" class="input-field" type="text">
+        </div>
+        <br>
+        <label style="color:white;margin-right: 77%;font-size: 12px;">Valor a Pagar</label>
+        <div class="field">
+        
+          
+          <input autocomplete="off" placeholder="Insira o valor que será pago pelo cliente" name="vlPagamento" id="vlPagamento" class="input-field" type="text">
+        </div>
+        <br>
+        <center>
+        <input class="button1" style="width:100px" type="submit" value="Enviar">
+        </center>
+        </div>
+        
+    </form>
+   </div>
+   <br>
+   <br>
+   <br>
+   <br>
+    </center>
+</body>
+</html>
